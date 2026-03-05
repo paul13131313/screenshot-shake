@@ -68,10 +68,7 @@ export default function Home() {
       ctx.clearRect(0, 0, cw, ch);
 
       if (stateRef.current === "shaken" && physics.active) {
-        // 崩壊中: 背景を薄く表示
-        ctx.globalAlpha = 0.12;
-        ctx.drawImage(img, 0, 0, cw, ch);
-        ctx.globalAlpha = 1;
+        // 崩壊中: 背景は黒（clearRectのまま）
       } else {
         // 待機中: 元画像をそのまま表示
         ctx.drawImage(img, 0, 0, cw, ch);
