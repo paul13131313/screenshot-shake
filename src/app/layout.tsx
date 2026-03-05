@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Screenshot Shake",
-  description: "スクリーンショットをアップロードして振ると、UIパーツが崩れ落ちる",
+  title: "画面崩壊",
+  description: "スクショをアップロードしてタップすると、画面がバラバラに崩れ落ちる",
 };
 
 export default function RootLayout({
